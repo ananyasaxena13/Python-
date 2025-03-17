@@ -43,13 +43,14 @@
 
 ## Statements and Expressions
 
-**Statements**                                  ! **Expression**
-A complete instruction that performs an action. ! A combination of values and operators that produces a result.<br>
-Returns a Value.                                ! Does not return a value.<br>
-*Example*--5 + 3, max(4, 7), x * 2              ! *Example*-- x = 5 + 3, print(x), if x > 5:<br>
-Can be part of a statement.                     ! Cannot be used where a value is expected.<br>
+**Statements**                                  
+A complete instruction that performs an action. 
+Returns a Value.                                 
+*Example*--5 + 3, max(4, 7), x * 2               
+Can be part of a statement.                      
 
-
-
-
-
+**Expression**
+A combination of values and operators that produces a result.<br>
+Does not return a value.<br>
+*Example*-- x = 5 + 3, print(x), if x > 5:<br>
+Cannot be used where a value is expected.<br>
