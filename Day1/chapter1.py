@@ -46,3 +46,18 @@ num = '123'
 converted_num = int(num) # 123
 print(converted_num, type(converted_num)) # 123 <class 'int'>
 
+#Variables
+'''Assign values to variables, print them, and observe changes upon reassignment.'''
+
+x = 5
+print(x) # 5
+x = 10
+print(x)  # 10
+
+#Variable Names and Keywords
+'''Try using reserved keywords as variable names and observe the errors.'''
+
+import keyword; 
+print(keyword.kwlist) # ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+

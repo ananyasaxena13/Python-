@@ -1,7 +1,7 @@
 # Variables, Statements, and Expressions
 **Variables** -- Symbolic names that act as containers for storing data values.<br>
 **Statements** -- A line of code that the interpreter executes, performing a specific action, such as assigning a value, making a decision, or executing a loop.**ex.--** x = 5,for, while.<br> 
-**Expressions** -- A combination of operators and operands that is interpreted to produce some other value.**ex.--** x = 15 + 1.3<nr>
+**Expressions** -- A combination of operators and operands that is interpreted to produce some other value.**ex.--** x = 15 + 1.3<br>
 
 # Value and DataTypes in Python
 ## Value
@@ -37,7 +37,7 @@
  <br>
 
  # Variables
- --
+ -- They are stored directly on the stack. When the function is called, the local variable result is also stored on the stack.
 
 
 
