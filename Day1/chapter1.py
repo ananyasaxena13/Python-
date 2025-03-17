@@ -60,4 +60,40 @@ print(x)  # 10
 import keyword; 
 print(keyword.kwlist) # ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
 
+#Choosing the Right Variable Name
+'''Rewrite a piece of code with meaningful variable names.'''
 
+total_price = 100
+discount = 0.2
+final_price = total_price * (1 - discount)
+print(final_price) # 80.0
+
+#total_price is a better name than tp because it is descriptive and easy to understand.
+
+#Statements and Expressions
+'''Identify statements and expressions in this code'''
+
+x = 5 + 3
+print(x) # 8
+
+#Order of Operations
+'''Write expressions using multiple operators to explore Python’s order of operations.'''
+
+result = 2 + 3 * 4 ** 2 / 8
+print(result) # 8.0
+
+#Reassignment
+
+'''Assign a value to a variable, reassign it, and observe the changes'''
+count = 10
+print(count) # 10
+count = 20
+print(count)    # 20
+
+'''Increment and decrement variables using `+=` and `-=`'''
+
+score = 100
+score += 10
+print(score) # 110
+score -= 5
+print(score) # 105
