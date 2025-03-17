@@ -29,16 +29,16 @@
 ## Type Conversion Functions
 **Fun Fact:**
    - Python provides built-in functions like `int()`, `float()`, and `str()` to handle type conversions.<br>
- -- Python defines type conversion functions to directly convert one data type to another.
- <br>
+ -- Python defines type conversion functions to directly convert one data type to another.<br>
  1. **Implicit Type Conversion** -- The Python interpreter automatically converts one data type to another without any user involvement.<br>
 
  2. **Explicit Type Conversion** -- The data type is manually changed by the user as per their requirement.
  <br>
 
- # Variables
+ ## Variables
  -- They are stored directly on the stack. When the function is called, the local variable result is also stored on the stack.
 
+## Variable Names and Keywords
 
 
 
