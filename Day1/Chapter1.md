@@ -49,7 +49,7 @@ Returns a Value.
 *Example*--5 + 3, max(4, 7), x * 2               
 Can be part of a statement.                      
 
-**Expression**
+**Expression**<br>
 A combination of values and operators that produces a result.<br>
 Does not return a value.<br>
 *Example*-- x = 5 + 3, print(x), if x > 5:<br>
