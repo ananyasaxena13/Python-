@@ -2,7 +2,17 @@
 
 #module_a.py:
 
-#
+def func_a():
+    return "Function A"
+#to resolve the circular dependencies we will import module where we need it not at the top of the file
+import module_b
+print(module_b.func_b())
+
+#module_b.py:
+import module_a
+
+def func_b():
+    return "Function B"
 
 
 #Dynamic Module Loading
@@ -35,4 +45,9 @@ def dynamic_import_and_execute():
 # Run the function
 dynamic_import_and_execute()
 
+#Dynamic Module Loading
+
+#creating calculator.py module
+#now for handling division by zero and invalid inputs we will use calculator.py module
+#and use that module in mainCalci.py to handle exceptions
 
