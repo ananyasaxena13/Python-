@@ -139,14 +139,14 @@ time.sleep(2)  # Simulate delay (if needed)
 print("Count:", count)  # Output: 100000
 
 
-## Unexpected None
+# Unexpected None
 
 def add(a, b):
     result = a + b # to avoid none we will return result
 print(add(3, 4)) # function returns none because it does not return anything
 
 
-## Silent Failures
+# Silent Failures
 
 try:
     result = 10 / 0  #zerodivision error occurs here
