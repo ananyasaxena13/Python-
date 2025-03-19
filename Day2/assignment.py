@@ -124,7 +124,7 @@ def inefficient_function():
 
 print(len(inefficient_function()))
 
-# Optimize Code to Improve Performance using generator
+# Optimize Code to Improve Performance using generator or list comprehension making the list and then adding to it index
 
 import time
 
