@@ -128,3 +128,29 @@ import calculator  # Now we can import it
 print(calculator.divide(10, 2))  # Output: 5.0
 
 
+# Import Side Effects
+
+myModule.py
+print("This runs on import!")
+
+def my_function():
+    print("This runs when the function is called!")
+
+import myModule #Output: This runs on import!
+
+
+# Investigate Python’s Import Caching
+
+mymodule.py
+
+print("mymodule is being imported!")
+
+def greet():
+    print("Hello from mymodule!")
+
+# now we run the code
+import sys
+import mymodule
+print(sys.modules['mymodule'])  # Accessing the cached module
+# Output: mymodule is being imported!
+        #<module 'mymodule' from 'C:\\Users\\anasa\\OneDrive\\Desktop\\Python-Training\\Python-\\Day3\\Ques3\\mymodule.py'>
