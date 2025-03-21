@@ -134,6 +134,14 @@ print(res)
 
 # Demonstrate nested list indexing.
 
+  - nested list is list inside another list.
+  - allow you to access elements witin lists that   are inside other lists.
+  - We access elements using two indices: one for the outer list and one for the inner list.
+
 # Convert a list of characters into a string
+
+    - using the join function
+    charl = ['a','b','c','d']
+    print("".join(charl)) **Output: 1**
 
 # Code to remove duplicates from a list while preserving order
