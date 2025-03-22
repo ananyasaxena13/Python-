@@ -24,7 +24,7 @@
     - allows deplicate values
     - empty string = " "
     - string with single element ="A"
-    - stores characters or strings
+   
 
 ## Lists
     - mutable
@@ -32,7 +32,7 @@
     - allows deplicate values
     - empty string = []
     - string with single element =["Apple"]
-    - stores characters or strings
+   
 
 ## Tuples
     - immmutable 
@@ -40,7 +40,7 @@
     - allows deplicate values
     - empty string = ( )
     - string with single element =("Apple")
-    - it can store any data type str, list, set, tuple, int and dictionary
+    
 
 # Indexing works in Python
 
@@ -88,7 +88,8 @@ print(lst1 * 2) **repetition**
 num =[1,2,3,2,4,3,3,1,3]
 print(num.count(3)) **Output: 4**
 
-# tuple output
+# Tuple output
+
 my_tuple = (1, 2, 3); 
 print(my_tuple[1:]) **Output: 2,3**
 
@@ -112,7 +113,7 @@ print(my_tuple[1:]) **Output: 2,3**
  # Given a list numbers = [1, 2, 2, 3, 4, 2], find the index of the first 2.
 
 lst = [1, 2, 2, 3, 4, 2]
-print(lst.index(2)) **Output: 1**
+print(lst.index(2)) **Output: 1** 
 
 # Code to check if a string is a palindrome.
 
@@ -142,6 +143,81 @@ print(res)
 
     - using the join function
     charl = ['a','b','c','d']
-    print("".join(charl)) **Output: 1**
+    print("".join(charl))  
+**Output : abcd**
 
 # Code to remove duplicates from a list while preserving order
+
+    lst =[2,3,5,4,1,2,4,3,5,6]
+    res =[]
+    for i in lst:
+        if i not in res:
+            res.append(i)
+    print(sorted(res)) 
+**or by using list(set(lst)) it removes duplicates but does not guarantee the order of element**
+
+
+#  A function that takes a list of tuples and sorts it by the second element of each tuple.
+
+    lst =[(1,4),(3,2),(5,6)]
+    res=[]
+    for tup in lst:
+        res.append(tup[1])
+    print(sorted(res))
+
+
+# A program to flatten a nested list of arbitrary depth.
+
+    lst =[[1,2,3],[4,5,6],[7,8,9]] # flaten output: [1,2,3,4,5,6,7,8,9]
+    res =[]
+    for i in lst:
+        for j in i:
+             res.append(j)
+    print(res)
+
+**OR using recursive call**
+
+    def flaten(lst): 
+    res =[]
+    for i in lst:
+        if isinstance(i,list): # check if i is list
+            res.extend(flaten(i)) # recursive call
+        else:
+            res.append(i)
+    return res
+    print(flaten([[1,2,3],[4,5,6],[7,8,9]]))
+
+# A function that rotates a list to the right by k steps.
+
+    def rotate_list(lst,k):
+    n = len(lst)
+    k = k % n
+    for i in range(k):
+        last = lst[-1]
+        for j in range(n-1,0,-1):
+            lst[j] = lst[j-1]
+        lst[0] = last
+    return lst
+    print(rotate_list([1,2,3,4,5],2))        
+    
+
+# Given two strings, write a function that returns True if they are anagrams.
+
+    def anangram(s1,s2):
+        return sorted(s1) == sorted(s2)
+    print(anangram("listen","silent")) 
+
+# Create a function to split a list into chunks of a specified size.
+
+    lst = [1,2,3,4,5,6,7,8,9]
+    n = 3
+    chunks = [lst[i:i+n] for i in range(0,len(lst),n)]
+    print(chunks)
+
+# Implement a function that merges two sorted lists into one sorted list.
+    
+    def merge(l1,l2):
+        l1.extend(l2)
+        return sorted(l1)
+    print(merge([1,2,3],[4,5,6]))
+
