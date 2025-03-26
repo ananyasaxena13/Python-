@@ -219,3 +219,21 @@
 # names = ["Alice Wonderland", "Bob Builder", "Charlie Chaplin"]
 # short = [name[0]+ name.split()[1]for name in names]
 # print(short)
+
+# a = [1,2,3,4,5,6,7,8,9,10]
+
+# res = list(filter(lambda x: x%2 ==0, a))
+
+# print(res)
+
+
+# data = "abababababab"
+
+# res = set(data)
+# print(res)
+# for i in res:
+#     count =0
+#     for i in data:
+#         if(i in res):
+#             count+=1
+#     print(i,count)
