@@ -6,4 +6,6 @@
 
 ## DAY3 -- Python Modules
 
-## DAY4 -- Sequences in Python
+## DAY4/5 -- Sequences in Python
+
+## DAY6 -- Iteration
