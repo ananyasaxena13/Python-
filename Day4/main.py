@@ -112,21 +112,21 @@
 # ERROR 404: Not Found
 # """
 # errors = logs.split("\n")
-# print(errors)
+# # print(errors)
 # codes = {s.split()[1].strip(':') for s in errors if s.startswith("ERROR")}
-# # print(sorted(codes))
+# print(sorted(codes))
 
 
-# configs = "host=127.0.0.1;port=8080;mode=debug"
+configs = "host=127.0.0.1;port=8080;mode=debug"
 
-# config = configs.split(";")
-# config_list = [tuple(x.split("=")) for x in config]
-# print(config_list)
+config = configs.split(";")
+config_list = [tuple(x.split("=")) for x in config]
+print(config_list)
 
 
 # post = "Loving the new #Python course! #Coding #Python #Learning"
 
-# hashtags =set(word for word in post.split() if word.startswith("#"))
+# hashtags ={word for word in post.split() if word.startswith("#")}
 # print(hashtags)
 
  

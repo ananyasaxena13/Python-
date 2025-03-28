@@ -37,3 +37,6 @@
 from PIL import Image
 img = Image.open("C:\Users\anasa\OneDrive\Desktop\Python-Training\Python-\Day6\img.jpg")
 print(img.size)
+    
+
+#calculator in tinder library
