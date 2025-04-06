@@ -11,7 +11,7 @@ while True:
     user_choice = int(input("Please enter your choice: "))
 
     if user_choice == 1:
-        print(f"Your balance is: {banking.balance}")
+        print(f"Your current balance is: {banking.balance}")
 
     elif user_choice == 2:
         withdraw_amount = int(input("Enter amount to withdraw: "))
