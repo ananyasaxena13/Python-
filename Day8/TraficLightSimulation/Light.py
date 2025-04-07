@@ -1,21 +1,23 @@
 #trafic light simulation using conditionals and loops
 
-class Light:
+import time
 
-    def __init__(self, color):
-        self.color = color
-        self.state = "off"
+def trafic_light(cycles = 5):
 
-    def turn_on(self):
-        if self.state == "off":
-            self.state = "on"
-            print(f"The {self.color} light is now on.")
-        else:
-            print(f"The {self.color} light is already on.")
+    light_sequence = [("Red", 10), ("Green", 12), ("Yellow", 5)]
 
-    def color_change(self, new_color):
-        if self.state == "on":
-            print(f"The {self.color} light is changing to {new_color}.")
-            self.color = new_color
-        else:
-            print(f"The {self.color} light is off. Cannot change color.")
+    print("Traffic Light Simulation Started")
+
+    for i in range(cycles):
+        print(f"Cycle {i + 1} of {cycles}")
+        for color, duration in light_sequence:
+            print(f"{color} light is ON for {duration} seconds")
+            time.sleep(duration)
+            print(f"{color} light is OFF")
+        print("Cycle complete. Restarting...\n")
+    print("Traffic Light Simulation Ended")
+
+trafic_light()
+    
+
+    
