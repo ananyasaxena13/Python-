@@ -24,13 +24,14 @@ class Employee:
             print(f"emp_id: {employee['emp_id']}, name: {employee['name']}, age: {employee['age']}")
             
     def mark_attendance(self, emp_id):
-        date = date.today() - timedelta(days=7)
+        lastsevendate = date.today() - timedelta(days=7)
         for employee in self.employee_list:
             if employee['emp_id'] == emp_id:
-                status = {f"Enter attendance for {date} as p for present and a for absent": None}
-                
-
-
+                employee['attendance'] = []
+                for i in range(7):
+                    curr_date = lastsevendate + timedelta(days=i)
+                    employee['attendance'].append()
+                     
 
 
     def get_employee(self, name):
