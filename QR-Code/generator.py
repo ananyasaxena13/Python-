@@ -6,7 +6,7 @@ import qrcode
 qr = qrcode.QRCode( 
     version = 1,   
     error_correction = qrcode.constants.ERROR_CORRECT_L, 
-    box_size = 10,  
+    box_size = 10,
     border = 4, 
 )
 qr.add_data("Name: Ananya Saxena ; Id: 2115000146") # add info to qr code

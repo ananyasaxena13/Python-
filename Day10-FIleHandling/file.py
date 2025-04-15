@@ -22,7 +22,7 @@ with open("top_student.txt",'w') as top_student:
 with open("student.csv",'w') as csvfile:
 
     writer = csv.writer(csvfile)
-    
+    writer. writerow(["Name", "Marks"]) # header
     #writer.writerow(stu_list)
     writer.writerows(stu_list) 
         
