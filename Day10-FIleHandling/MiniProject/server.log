@@ -1,5 +1,5 @@
-2025-04-16 14:01:22 ERROR Failed to load user profile.
-2025-04-16 14:01:23 Invalid user ID format.
-2025-04-16 14:01:25 ERROR Database connection error.
-2025-04-16 14:01:27 INFO  Retrying after error...
-2025-04-16 14:01:30 ERROR Timeout occurred while processing request.
+ ERROR Failed to load user profile.
+ Invalid user ID format.
+ ERROR Database connection error.
+ INFO  Retrying after error...
+ ERROR Timeout occurred while processing request.
