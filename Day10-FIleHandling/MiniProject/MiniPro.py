@@ -58,3 +58,10 @@ with open('full_book.txt', 'w') as file:
 import os
 counttxt =0
 countcsv =0
+folder_path = "C:/Users/anasa/OneDrive/Desktop/Python-Training/Python-/Day10-FIleHandling/MiniProject"
+for filename in os.listdir(folder_path):
+    if filename.endswith('.txt'):
+        counttxt +=1
+    elif filename.endswith('.csv'):
+        countcsv +=1
+print(f"Number of .txt files: {counttxt}\nNumber of .csv files: {countcsv}")
