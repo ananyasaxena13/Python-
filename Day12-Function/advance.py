@@ -1,8 +1,5 @@
 def analyze_text(text: str):
-#return number of words\
-#return number of unique words
-#frequency f each word
-    
+
     words = text.split()
     num_words = len(words)
     unique_words = set(words)
@@ -55,7 +52,7 @@ print(safe_divide(x, y))
 
 
 def time_increment(h: int, m: int) -> tuple[int, int]:
-    #simulate digital clock that returns time after 1 minute handle boundary casee
+    
     m += 1
     if m == 60:
         m = 0
